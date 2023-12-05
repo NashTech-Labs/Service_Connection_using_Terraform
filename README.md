@@ -20,6 +20,9 @@ Commands :
 -  terraform plan
 -  terraform apply
 ```
+* You can create your own `terraform.auto.tfvars` file to define the values of the variables like `vi terraform.auto.tfvars`
+E.g:- 
+`variable_name = value`
 ---
 
 ## Configuration
