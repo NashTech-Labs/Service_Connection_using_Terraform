@@ -6,11 +6,6 @@ data "azuredevops_project" "project" {
   name = var.azure_devops_project_VV
 }
 
-data "azuredevops_build_definition" "pipeline_definition" {
-  project_id = data.azuredevops_project.project.id
-  name       = var.azure_devops_build_definition_VV
-}
-
 resource "azuredevops_serviceendpoint_azurerm" "service_connection" {
   project_id                             = data.azuredevops_project.project.id
   service_endpoint_name                  = local.service_endpoint_name
